@@ -3,6 +3,11 @@ letter - abcdefghijklmnopqrstuvwxyz
 cap let - ABCDEFGHIJKLMNOPQRSTUVWXYZ
 NUMBERS - 0123456789
 
+" ","!","\"","#","$","%","&","\'","(",")"\,"\*","+","\,","-",".","/",":",";","<","=",">","?","@","[","\","]","^","_","`","{","|","}","~"}
+
+
+"!","#","$","%","&","'","(",")","*","+",",","-",".","/",":",";","<","=",">","?","@","[","\","]","^","_","`","{","|","}","~"
+
 Criteria = 
 user clicks button
 user will be presented with prompt to enter password length(10)
