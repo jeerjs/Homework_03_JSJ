@@ -36,28 +36,30 @@ const generatePassword = () => {
 
     //if entry is not correct alert the user and close window
   } else {
-    alert("please enter a valid password length");
+    alert("Please Enter A Valid Password Length");
     e.default.prevent();
     window.close;
   }
 
   //confirm buttons and add to charset
   //user will be presented with a confirm for lower case(true)
-  const pushlowercase = confirm("Do you want lowercase in your password");
+  const pushlowercase = confirm(
+    "Do you want a lowercase character in your password"
+  );
   if (pushlowercase) {
     //this will add the string to the starter string
     charset += lowercase;
     // console.log("True");
   }
   //confirm for uppercase (true)
-  const pushuppercase = confirm("do you want uppercase in your password");
+  const pushuppercase = confirm("Do you want an uppercase in your password");
   if (pushuppercase) {
     //this will add the string to the starter string
     charset += uppercase;
     // console.log("True");
   }
   //confirm for numeric(true)
-  const pushnumeric = confirm("do you want numbers in your passowrd");
+  const pushnumeric = confirm("Do you want numbers in your password");
   if (pushnumeric) {
     //this will add the string to the starter string
     charset += numeric;
@@ -65,12 +67,18 @@ const generatePassword = () => {
   }
   //confirm for special characters(true)
   const pushspecial = confirm(
-    "do you want special characters in your password"
+    "Do you want a special character in your password"
   );
   if (pushspecial) {
     //this will add the string to the starter string
     charset += special;
     // console.log("True");
+  }
+
+  if (charset < "1") {
+    alert("please select at least 1 condition");
+    e.default.prevent();
+    window.close;
   }
 
   //declare password as variable
